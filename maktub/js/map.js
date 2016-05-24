@@ -20,11 +20,10 @@ function initMap() {
 	        { visibility: "off" }
 	      ]
 	    }
-	  ];
+	 ];
 
-	var myLatLng = {lat: -22.8506984, lng: -47.2311702};
+	var myLatLng = {lat: -22.8240531, lng: -47.2634305};
 
-	// Create a map object and specify the DOM element for display.
 	var map = new google.maps.Map(document.getElementById('map'), {
 		center: myLatLng,
 	    scrollwheel: false,
@@ -32,10 +31,8 @@ function initMap() {
 	    zoom: 15
 	  });
 
-	  // Create a marker and set its position.
 	  var marker = new google.maps.Marker({
 	    map: map,
-	    position: myLatLng,
-	    title: 'We Are Here!'
+	    position: myLatLng
 	  });
 }
