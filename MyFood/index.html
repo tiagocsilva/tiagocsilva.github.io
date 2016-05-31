@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyFood</title>
+
+	<meta charset="UTF-8">
+
+	<!--My Css-->
+	<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+	<!-- Font ABeeZee -->
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+	<!--JQuery  -->
+	<script src="js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var hg = $(window).height();
+			$("header").height(hg);
+			document.getElementById("content").style.marginTop = hg/2 + "px";
+		});	
+		
+		$(window).resize(function() {
+			var hg = $(window).height();
+			$("header").height(hg);
+			document.getElementById("content").style.marginTop = hg/2 + "px";
+		});	
+	</script>
+</head>
+<body>
+	<header>
+		<div id="content">	
+			<h1><a href="#">MyFood</a></h1>
+			<nav>
+				<ul>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Cardápio</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="about">
+		<h1>Sobre</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur id diam sit amet suscipit. Nullam pharetra erat sit amet consectetur interdum. Duis bibendum ornare mi in convallis. Morbi maximus, augue eu commodo ultricies, enim tellus malesuada quam, vitae pellentesque turpis neque et odio. Quisque accumsan ligula eu magna eleifend interdum non id lacus. Nulla congue viverra euismod. Praesent accumsan eros tortor, eget porta quam malesuada quis. Nam ac sagittis ipsum. Nunc consectetur dui vel orci luctus aliquam. Cras a ipsum facilisis mauris euismod gravida at vel lorem. Vivamus vitae ultrices lectus, sed pulvinar est. Fusce nisi metus, cursus dictum nunc ut, vehicula dignissim leo. Donec maximus tortor turpis, tempor vehicula nisl lacinia non. Praesent iaculis vel nunc quis consequat.</p>
+
+		<p>Sed a eros nec urna cursus posuere a auctor leo. Nunc quis mauris ac ex viverra laoreet vitae porta urna. Mauris bibendum dignissim orci nec varius. Nulla pharetra massa in quam ullamcorper consectetur. Nunc congue dolor a diam egestas, ac varius dolor pretium. Mauris nec euismod turpis. Sed fringilla, elit vel dapibus faucibus, nibh velit bibendum quam, a posuere enim velit a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut dapibus nibh. Nam vel leo non sem porttitor venenatis. Phasellus quis tincidunt arcu. Nam sed luctus nunc. Ut iaculis fringilla feugiat. Duis aliquet neque in leo iaculis sagittis a in ex. Fusce ac turpis eu enim rutrum hendrerit et non lorem. Etiam vel lorem vulputate, pretium arcu in, tristique turpis.</p>
+	</section>
+</body>
+</html>
