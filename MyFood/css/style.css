@@ -44,7 +44,6 @@ nav ul li{
 nav a {
 	font-size: 40px;
 	color: #FFF;
-	
 }
 
 header a {
@@ -115,5 +114,23 @@ section {
 	nav ul li {
 		display: block;
 	}
+
+	#about {
+		background-image: url("../img/aboutSmall.jpg");
+	}
+
+	#cardapio {
+		background-image: url("../img/cardapioSmall.jpg");
+	}
+
+	nav a {
+		font-size: 25px;
+		color: #FFF;
+	}
+
+	#headerDiv h1 {
+		font-size: 60px;
+	}
+
 }
 
