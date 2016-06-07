@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--My Css-->
 	<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+	<!--Simple Grid-->
+	<link rel="stylesheet" type="text/css" href="./css/simplegrid.css"> 
 	<!-- Font ABeeZee -->
 	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
 	<!--JQuery  -->
@@ -19,25 +21,36 @@
 			var hg = $(window).height();
 			if(hg > 380) {
 				$("header").height(hg);
+
 			}	
 			if(hg > 600) {
-				$("section").height(hg);
+				$("#about").height(hg);
 			}
 		});	
 		
-		$(window).resize(function() {
+		/*$(window).resize(function() {
+			var wd = $(window).width();
 			var hg = $(window).height();
+
 			if(hg > 380) {
 				$("header").height(hg);
 			}	
+
 			if(hg > 600) {
 				$("section").height(hg);
+			}
+			else if(wd > 500)
+			{
+				$("section").height(1000);
+			}
+			else if(wd > 400) {
+				$("section").height(1100);
 			}
 			else
 			{
 				$("section").height(2500);
 			}
-		});	
+		});	*/
 	</script>
 	<script type="text/javascript">
 $(document).ready(function($) { 
@@ -72,16 +85,112 @@ $(document).ready(function($) {
 			</div>
 	</section>
 
-	
-
 	<section id="cardapio">
 		<div class="content">
 			<h1>Cardápio</h1>
+			<hr width="100%">
+			<ul>
+				<li><img src="img/arroz.jpg" class="img"> Arroz</li>
+				<li><img src="img/feijão.jpg" class="img"> Feijão</li>
+				<li><img src="img/macarrao.jpg" class="img"> Macarrão</li>
+			</ul>
+			<hr width="100%">
+			<ul>
+				<li><img src="img/Contra-file.jpg" class="img"> Contrafilé</li>
+				<li><img src="img/file-mignon.jpg" class="img"> File Mignon</li>
+				<li><img src="img/picanha.jpg" class="img"> Picanha</li>
+				<li><img src="img/costela.jpg" class="img"> Costela</li>
+				<li><img src="img/fraldinha.jpg" class="img"> Fraldinha</li>
+				<li><img src="img/maminha.jpg" class="img"> Maminha</li>
+			</ul>
+			<hr width="100%">
+			<ul>
+				<li><img src="img/salmao.jpg" class="img"> Salmão</li>
+				<li><img src="img/anchova.jpg" class="img"> Anchova</li>
+				<li><img src="img/bacalhau.jpg" class="img"> Bacalhau</li>
+				<li><img src="img/linguado.jpg" class="img"> Linguado</li>
+			</ul>
+			<hr width="100%">
+			<ul>
+				<li><img src="img/batata-frita.jpg" class="img">Batata Frita</li>
+				<li><img src="img/pure-batata.jpg" class="img"> Purê</li>
+				<li><img src="img/creme-milho.jpg" class="img"> Creme de Milho</li>
+				<li><img src="img/linguine.jpg" class="img"> Linguine</li>
+				<li><img src="img/ratatouile.jpeg" class="img"> Ratatouile</li>
+				<li><img src="img/maionese.jpg" class="img"> Maionese</li>
+				<li><img src="img/panqueca.jpg" class="img"> Panqueca</li>
+			</ul>
+			<hr width="100%">
+			<ul>
+				<li><img src="img/sorvete.jpg" class="img"> Sorvete</li>
+				<li><img src="img/bolo.jpg" class="img"> Bolo</li>
+				<li><img src="img/torta.jpg" class="img"> Torta</li>
+				<li><img src="img/mousse.jpg" class="img">Mousse</li>
+			</ul>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur id diam sit amet suscipit. Nullam pharetra erat sit amet consectetur interdum. Duis bibendum ornare mi in convallis. Morbi maximus, augue eu commodo ultricies, enim tellus malesuada quam, vitae pellentesque turpis neque et odio. Quisque accumsan ligula eu magna eleifend interdum non id lacus. Nulla congue viverra euismod. Praesent accumsan eros tortor, eget porta quam malesuada quis. Nam ac sagittis ipsum. Nunc consectetur dui vel orci luctus aliquam. Cras a ipsum facilisis mauris euismod gravida at vel lorem. Vivamus vitae ultrices lectus, sed pulvinar est. Fusce nisi metus, cursus dictum nunc ut, vehicula dignissim leo. Donec maximus tortor turpis, tempor vehicula nisl lacinia non. Praesent iaculis vel nunc quis consequat.</p>
-
-			<p>Sed a eros nec urna cursus posuere a auctor leo. Nunc quis mauris ac ex viverra laoreet vitae porta urna. Mauris bibendum dignissim orci nec varius. Nulla pharetra massa in quam ullamcorper consectetur. Nunc congue dolor a diam egestas, ac varius dolor pretium. Mauris nec euismod turpis. Sed fringilla, elit vel dapibus faucibus, nibh velit bibendum quam, a posuere enim velit a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut dapibus nibh. Nam vel leo non sem porttitor venenatis. Phasellus quis tincidunt arcu. Nam sed luctus nunc. Ut iaculis fringilla feugiat. Duis aliquet neque in leo iaculis sagittis a in ex. Fusce ac turpis eu enim rutrum hendrerit et non lorem. Etiam vel lorem vulputate, pretium arcu in, tristique turpis.</p>
-		</div>
+		
+			<!--
+			<div class="grid grid-pad">
+				<div class="col-1-6 divCardapio" style="width: 10%">
+					<center>
+					<h3>Guarnição Básica</h3>
+					<img src="img/arroz.jpg" class="img"> <br>Arroz<br>
+					<img src="img/feijão.jpg" class="img"> <br>Feijão<br>
+					<img src="img/macarrao.jpg" class="img"> <br>Macarrão<br>
+					</center>
+				</div>
+				<div class="col-1-6 divCardapio" style="width: 20%;">
+					<h3>Carnes</h3>
+					<div class="col-1-2" style="width: %;">
+					<img src="img/Contra-file.jpg" class="img"> <br>Contrafilé<br>
+					<img src="img/file-mignon.jpg" class="img"> <br>File Mignon<br>
+					<img src="img/picanha.jpg" class="img"> <br>Picanha<br>
+					</div>
+					<div class="col-1-2" style="width: %;">
+					<img src="img/costela.jpg" class="img"> <br>Costela<br>
+					<img src="img/fraldinha.jpg" class="img"> <br>Fraldinha<br>
+					<img src="img/maminha.jpg" class="img"> <br>Maminha<br>
+					</div>
+				</div>
+				<div class="col-1-6 divCardapio" style="width: 10%">
+					<h3>Peixes</h3>
+					<img src="img/salmao.jpg" class="img"> <br>Salmão<br>
+					<img src="img/anchova.jpg" class="img"> <br>Anchova<br>
+					<img src="img/bacalhau.jpg" class="img"> <br>Bacalhau<br>
+					<img src="img/linguado.jpg" class="img"> <br>Linguado<br>
+				</div>
+				<div class="col-1-6 divCardapio">
+					<h3>Acomp.</h3>
+					<div class="col-1-2">
+					<img src="img/batata-frita.jpg" class="img"> <br>Batata Frita<br>
+					<img src="img/pure-batata.jpg" class="img"> <br>Purê<br>
+					<img src="img/creme-milho.jpg" class="img"> <br>Creme de Milho<br>
+					<img src="img/linguine.jpg" class="img"> <br>Linguine<br>
+					</div>
+					<div class="col-1-2">
+					<img src="img/ratatouile.jpeg" class="img"> <br>Ratatouile<br>
+					<img src="img/maionese.jpg" class="img"> <br>Maionese<br>
+					<img src="img/creme-espinafre.jpg" class="img"> <br>Creme de Espinafre<br>
+					<img src="img/panqueca.jpg" class="img"> <br>Panqueca<br>
+					</div>
+				</div>
+				<div class="col-1-6 divCardapio" style="width: 15%">
+					<h3>Guarnição Extra</h3>
+					<img src="img/legumes.jpg" class="img"> <br>Legumes<br>
+					<img src="img/farofa.png" class="img"> <br>Farofa<br>
+					<img src="img/salada-tradicional.jpg" class="img"> <br>Salada Tradicional<br>
+					<img src="img/salada-beterraba.jpg" class="img"> <br>Salada de Beterraba<br>
+				</div>
+				<div class="col-1-6 divCardapio" style="width: 10%">
+					<h3>Sobremesas</h3>
+					<img src="img/sorvete.jpg" class="img"> <br>Sorvete<br>
+					<img src="img/bolo.jpg" class="img"> <br>Bolo<br>
+					<img src="img/torta.jpg" class="img"> <br>Torta<br>
+					<img src="img/mousse.jpg" class="img"> <br>Mousse<br>
+				</div>
+			</div>
+		</div>			
+			-->
 	</section>
 <!--
 	<section id="contact">

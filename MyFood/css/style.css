@@ -95,6 +95,7 @@ section {
 
 
 .content {
+	width: 100%;
 	padding-top: 20px;
 	margin-right: 40px;
 	margin-left: 40px;
@@ -108,11 +109,48 @@ section {
     text-align: justify;
 }
 
+.img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	transition: width 3s,height 3s;
+	cursor: pointer;
+	
+}
+
+.divCardapio {
+	text-align: center;
+	border: solid;
+	padding: 2px 2px 2px 2px;
+	margin: 10px;
+}
+
+#cardapio ul li {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: none;
+	text-align: center;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.img:hover {
+	width: 300px;
+	height: 300px;
+}
+
+
 
 /* MOBILE */
 @media all and (max-width: 600px) {
 	nav ul li {
 		display: block;
+	}
+
+	header {
+		background-image: url("../img/headerSmall.jpg");
 	}
 
 	#about {
