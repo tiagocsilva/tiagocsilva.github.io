@@ -2,15 +2,74 @@
 <html>
 <head>
 	<title>Tiago Silva</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- META Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- My Script -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Font Offside -->
+	<link href='https://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+	<!-- Vegas Slideshows -->
+	<script type="text/javascript" src="js/vegas.min.js"></script>
+	<!-- CSS Vegas Slideshow -->
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">	
+
+	<!-- Define Page -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("nav button:eq(0)").css("border-color","#2790B0");
+		});
+		
+	</script>
 </head>
 <body>
-	<div id="principal">
-		<div id="content">
-			<h1>SITE EM CONSTRUCAO</h1>
-			<h3><<< Tiago Silva >>></h3>
+	<aside>
+		<img src="img/perfil.png" id="imgPerfil">
+		<br>
+		<span id="myName">Tiago Silva</span>
+		<nav>
+			<ul>
+				<li><button>Home</button></li>
+				<li><button>WebSites</button></li>
+				<li><button>C/C++</button></li>
+				<li><button>Portugol</button></li>
+			</ul>
+		</nav>
+	</aside>
+	<section id="home">
+
+		<div id="content-1">
+			<span>Tiago Silva</span>
+			<br>
+			Programmer / Web Developer
 		</div>
-	</div>
+
+		<div id="content-2" class="dispNone">
+			<span>WebSites</span>
+			<br>
+			<a href="#">Acessar <i class="fa fa-hand-o-right" aria-hidden="true"></i></a>
+		</div>
+
+		<div id="content-3" class="dispNone">
+			<span>C/C++</span>
+			<br>
+			<a href="#">Acessar <i class="fa fa-hand-o-right" aria-hidden="true"></i></a>&nbsp;&nbsp;
+		</div>
+
+		<div id="content-4" class="dispNone">
+			<span>Portugol</span>
+			<br>
+			<a href="#">Acessar <i class="fa fa-hand-o-right" aria-hidden="true"></i></a>
+		</div>
+
+	</section>
+
+	<!-- Background Slideshow Controller -->
+	<script src="js/vegasController.js"></script>
 </body>
 </html>
