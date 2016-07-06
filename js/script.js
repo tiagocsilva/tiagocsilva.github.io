@@ -3,13 +3,25 @@ $(document).ready(function() {
 	//hg -= parseInt($("aside").css("padding-top"));
 	//hg -= parseInt($("aside").css("padding-bottom"));
 
+	
+
+	var wd = $(window).width();
+
+	if(wd > 760) {
+		
+		wd -= $("aside").width();
+		//wd -= wd * 0.1;
+		$("section").width(wd);	
+
+	}
+	else
+	{
+		hg -= 100;
+	}
+
 	$("aside").height(hg);
 	$("section").height(hg);
 
-	var wd = $("section").width();
-	wd -= $("aside").width();
-	//wd -= wd * 0.1;
-	$("section").width(wd);	
 });
 
 var i = 1;
