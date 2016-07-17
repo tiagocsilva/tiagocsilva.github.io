@@ -9,7 +9,7 @@ aside {
 	background-color: #353432;
 	width: 300px;
 	text-align: center;
-	padding: 50px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	color: #2790B0;
 	font-size: 25px;
 	font-weight: bold;
@@ -17,6 +17,7 @@ aside {
 	margin: 0px 0px 0px 0px;
 	text-align: center;
 	position: fixed;
+	z-index: 10;
 }
 
 nav ul {
@@ -63,7 +64,6 @@ nav button:focus {
 	border: solid 3px #2790B0;
 }
 
-
 #home {
 	width: 100%;
 	float: right;
@@ -71,11 +71,9 @@ nav button:focus {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	//border: solid 2px #FFF;
 	justify-content: center;
 	font-size: 50px;
 	text-align: center;
-	//background-image: url("../img/background-03.jpg");
 }
 
 #home span {
@@ -99,7 +97,7 @@ nav button:focus {
 	font-size: 40px;
 }
 
-#menuOpen, #menuClose {
+#menuOpen {
 	cursor: pointer;
 	margin-top: 20px;
 	margin-left: 20px;
@@ -108,13 +106,149 @@ nav button:focus {
 	display: none;
 }
 
+#menuClose {
+	cursor: pointer;
+	transition: color 0.5s;
+	color: #FFF;
+	display: none;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
 #menuOpen:hover, #menuClose:hover {
 	color: #BFBBAE;
+}
+
+#websites {
+	background-image: url("../img/windows.jpg");
+	width: 100%;
+	float: right;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#websites a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.site {
+	border: solid 2px #FFF;
+	width: 220px;
+	height: 270px;
+	margin: 0px 50px 0px 50px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-radius: 30% 0% 30% 0%;
+}
+
+.site:first-child {
+	background-color: #795548;
+}
+
+.site:last-child {
+	background-color: #EAAE4C;
+}
+
+.site hr {
+	width: 100%;
+	border: solid 1px #FFF;
+}
+
+.site i {
+	position: absolute;
+	bottom: 0px;
+	right: 40%;
+	margin-bottom: 10px;
+
+}
+
+.site-title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#portugol {
+	//background-image: url("../img/background-04.jpg");
+	//background-size: cover;
+	//background-attachment: fixed;
+	width: 100%;
+	float: right;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;	
+}
+
+#listaAlg {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#listaAlg h1 {
+	font-size: 30px;
+}
+
+.algoritmo {
+	width: 80%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background-color: #353432;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 30% 5% 15% 0%;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	justify-content: center;
+	box-shadow: 5px 5px 5px #000;
+}
+
+.algoritmo p {
+	width: 70%;
+}
+
+.algoritmo:hover {
+	box-shadow: 8px 8px 8px #000;
+	color: #FFF;
+}
+
+.algoritmo i {
+	position: absolute;	
+	right: 10px;
+	bottom: 10px;
+}
+
+.algoritmo a {
+	text-decoration: none;
+	color: #FFF;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+
+#C {
+	margin-left: 400px;
+	width: 100px;
 }
 
 @media screen and (max-width: 760px) {
 	aside {
 		display: none;
+		transition: width 1s;
 	}
 
 	#home {
