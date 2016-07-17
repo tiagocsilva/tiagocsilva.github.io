@@ -1,15 +1,11 @@
-<!-- 
-	LEMBETES:
-		- TROCAR FOTO
-		- ADICIONAR SOCIAL INCONS
-
--->
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Tiago Silva</title>
 	<!-- META Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Meta Theme Color -->
+	<meta name="theme-color" content="#4E4D4A">
 	<!-- My CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- JQuery -->
@@ -24,29 +20,23 @@
 	<link rel="stylesheet" href="css/vegas.min.css">
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">	
-
-	<!-- Define Page -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("nav button:eq(0)").css("border-color","#2790B0");
-		});
-	</script>
 </head>
 <body>
 
-	<i id="menuOpen" class="fa fa-bars fa-3x" aria-hidden="true"></i>
-	<i id="menuClose" class="fa fa-times fa-3x" aria-hidden="true"></i>
+	<a id="menuOpen"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
 
 	<aside>
+		<a id="menuClose"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+		<br><br>
 		<img src="img/perfil.png" id="imgPerfil">
 		<br>
 		<span id="myName">Tiago Silva</span>
 		<nav>
 			<ul>
-				<li><button>Home</button></li>
-				<li><button>WebSites</button></li>
-				<li><button>C/C++</button></li>
-				<li><button>Portugol</button></li>
+				<a href="index.html"><li><button>Home</button></li></a>
+				<a href="websites.html"><li><button>WebSites</button></li></a>
+				<a href="C.html"><li><button>C/C++</button></li></a>
+				<a href="Portugol.html"><li><button>Portugol</button></li></a>
 			</ul>
 		</nav>
 	</aside>
