@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Algoritmo 2</title>
+	<link rel="stylesheet" type="text/css" href="css/alg.css">
+</head>
+<body>
+
+	<section>
+		<a href="javascript:showList()"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+		<h1>Portugol</h1>
+		
+		<h2>Conhecer o salário do funcionário. Se o salário for maior que 10.000 então descontar 9% de INSS. Informe o salário líquido do funcionário.</h2>
+
+	<code>
+		INICIO
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL : sal, desconto;
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Digite o salário do funcionário: ”)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leia(sal)
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se(sal > 10000) então
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;desconto <- sal * 9 / 100
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sal <- sal - desconto
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“salário Líquido: ” + sal)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fimse
+		<br>
+		FIM
+		</code>
+
+	</section>
+</body>
+</html>
