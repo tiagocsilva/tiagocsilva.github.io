@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Algoritmo 2</title>
+	<link rel="stylesheet" type="text/css" href="css/alg.css">
+</head>
+<body>
+
+	<section>
+		<a href="javascript:showList()"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+		<h1>Portugol</h1>
+		
+		<h2>Fornecidos o nome do aluno e as suas duas notas bimestrais, informe a média e verifique se o mesmo foi aprovado ou reprovado. Os critérios para aprovação são: </h2>
+		<h2>média >= 7,0 situação APROVADO</h2>
+		<h2>média < 7,0 situação REPROVADO</h2>
+
+	<code>
+		INICIO
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CARACTER : nome;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL n1,n2,media;
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Digite o nome do aluno: ”)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leia(nome)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Digite a primeira nota: ”)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leia(n1)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Digite a segunda nota: ”)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leia(n2)
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media <- (n1+n2)/2
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Nome: ” + nome + “Média: ” + media)
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se(media >= 7) então
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“APROVADO”)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senão
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(REPROVADO)
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fimse
+		<br>
+		FIM
+		</code>
+
+	</section>
+</body>
+</html>
