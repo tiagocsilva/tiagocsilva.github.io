@@ -26,6 +26,7 @@ $(document).ready(function() {
 		$("aside").height(hg);
 	}
 
+
 	//VERIFICA SE A PÁGINA É A PORTUGOL E CARREGA A LISTA DE ALGORITMOS
 	if(currentPage == "Portugol") {
 		$("#portugol").load("alg.html");
