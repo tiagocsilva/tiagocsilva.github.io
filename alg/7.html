@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Algoritmo 2</title>
+	<link rel="stylesheet" type="text/css" href="css/alg.css">
+</head>
+<body>
+
+	<section>
+		<a href="javascript:showList()"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+		<h1>Portugol</h1>
+		
+		<h2>Dados 3 valores A, B, C, verificar se eles podem ser os comprimentos dos lados de um triângulo e, se forem, verificar se compõem um triângulo equilátero (com os 3 lados iguais), isósceles (com 2 lados iguais) e escaleno (todos os lados diferentes). Informar se não compuserem nenhum triângulo. </h2>
+
+		<code>
+			INICIO
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REAL: preco;
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTEIRO : cod;
+				<br>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Digite o valor do produto: ”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leia(preco)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Digite o código do produto: ”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leia(cod)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(preco)
+				<br>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escolha cod:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 1:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Sul”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 2:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Norte”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 3:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Leste”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 4:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Oeste”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 5,6:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Nordeste”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 7,8,9:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Sudeste”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 10 ate 20:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Centro-Oeste”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caso 25 ate 50:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva(“Nordeste”)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outrocaso:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escreva("Código Inválido")
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FimEscolha
+				<br>
+			FIM
+		</code>
+
+		<code>
+			<!-- VERIFICAR CONDIÇÃO DE EXISTENCIA DOS TRIANGULOS -->
+			INICIO
+
+				INTEIRO : a,b,c;
+
+				Escreva(“Digite o primeiro lado do triângulo: ”)
+
+				Leia(a)
+
+				Escreva(“Digite o segundo lado do triângulo: ”)
+
+				Leia(b)
+
+				Escreva(“Digite o terceiro lado do triângulo: ”)
+
+				Leia(c)
+
+				SE(((a+b) = c) E ((a+c) = b) E ((b+c) = a)) então
+
+				SE((a = b) E (a = c)) {
+
+Escreva(“Triângulo Equilátero”)
+
+}
+
+SENAO SE((a = b) ou (b=c) ou (a = c)) {
+
+Escreva(“Triângulo Isósceles”)
+
+}
+
+SENAO SE((a &lt;&gt; b) e (b &lt;&gt; c) e (a &lt;&gt; c)) {
+
+Escreva(“Triângulo Escaleno”)
+
+}
+
+SENAO {
+
+Escreva(“Triângulo não se encaixa em nenhum dos tipos.”)
+
+}
+
+FimSE
+
+			FIM
+		</code>
+
+	</section>
+</body>
+</html>
